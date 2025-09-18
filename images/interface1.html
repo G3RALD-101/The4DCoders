@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../styles/interface1.css">
+        <script src="../scripts/interface1.js"></script>
+        <title>GeraldForder/interface1</title>
+    </head>
+    <body>
+        
+<div id="loading-screen" role="status" aria-live="polite">
+  <div>
+    <span style="font-size:2.2rem;color:var(--stellar-gold);font-family:var(--font-main);">Stellar Slide Navigator</span>
+    <div id="loading-progress" aria-label="Loading progress">
+      <div id="loading-bar"></div>
+    </div>
+    <span id="loading-text" style="margin-top:12px;font-size:1rem;color:#fff;">Loading assets...</span>
+  </div>
+</div>
+<!-- Starfield Background -->
+<canvas id="starfield" aria-hidden="true"></canvas>
+<!-- Particle System -->
+<canvas id="particles" aria-hidden="true"></canvas>
+<!-- Custom Cursor -->
+<div id="custom-cursor" aria-hidden="true"></div>
+<!-- Main Carousel Container -->
+<main id="carousel-container" tabindex="-1">
+  <!-- Carousel -->
+  <section id="stellar-carousel" aria-label="Stellar Slide Carousel" tabindex="0"></section>
+  <!-- Controls and Navigation -->
+  <nav id="carousel-controls" aria-label="Carousel Controls">
+    <button class="nav-btn" id="prev-btn" aria-label="Previous Slide" tabindex="0">‹</button>
+    <button class="nav-btn" id="next-btn" aria-label="Next Slide" tabindex="0">›</button>
+  </nav>
+  <nav id="dot-nav" aria-label="Slide Navigation"></nav>
+</main>
+    </body>
+</html>
