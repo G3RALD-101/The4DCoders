@@ -10,9 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const passwordValue = password.value.trim();
 
         if (emailValue === "The4DCoders@gamedev.com.ph" && passwordValue === "The4DCoders_dev123") {
-            window.location.href = "../html/interface1.html";
+            window.location.href = "../interface1.html";
         } else {
             alert("Invalid email or password!");
         }
     });
 });
+
